@@ -88,7 +88,7 @@ var app = http.createServer(function(req, res){
 							res.end();
 						}
 					}
-				}s
+				}
 			});
 		}else{
 			res.writeHead(503);
@@ -99,7 +99,7 @@ var app = http.createServer(function(req, res){
 		console.log(e);
 	}
 });
-app.listen(80);
+app.listen(process.env.PORT);
 /*
 setInterval(()=>{
 	if(CUR_SERVER_REQ > 0){
